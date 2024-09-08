@@ -733,3 +733,37 @@ h5 {
   }
 }
 
+
+
+.hero-img-container {
+  width: 1200px; /* Set the desired width */
+  height: 600px; /* Set the desired height */
+  border-radius: 50%; /* Make the container a perfect circle */
+  overflow: hidden; /* Hide any overflow to maintain circular shape */
+}
+
+.hero-img {
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Maintain the container's height */
+  object-fit: cover; /* Ensure the image covers the container */
+  object-position: center; /* Center the image */
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .hero-img-container {
+    width: 300px; /* Decrease width on smaller screens */
+    height: 300px; /* Decrease height for smaller screens */
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-img-container {
+    width: 500px; /* Increase width for larger screens */
+    height: 500px; /* Increase height for larger screens */
+  }
+}
+
+
+
+
